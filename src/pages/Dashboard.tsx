@@ -1,9 +1,8 @@
-
 import { Navigation } from "@/components/Navigation";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { BarChart3, Users, Clock, CheckCircle, AlertTriangle, TrendingUp } from "lucide-react";
+import { BarChart3, Users, Clock, CheckCircle, AlertTriangle, TrendingUp, Activity } from "lucide-react";
 
 const stats = [
   { label: "APIs Ativas", value: "12", icon: BarChart3, color: "text-blue-600" },

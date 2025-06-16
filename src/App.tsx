@@ -10,6 +10,7 @@ import ApiManager from "./pages/ApiManager";
 import AuthSystem from "./pages/AuthSystem";
 import Monitoring from "./pages/Monitoring";
 import Documentation from "./pages/Documentation";
+import ApiIntegration from "./pages/ApiIntegration";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,6 +25,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/api-manager" element={<ApiManager />} />
+          <Route path="/api-integration" element={<ApiIntegration />} />
           <Route path="/auth" element={<AuthSystem />} />
           <Route path="/monitoring" element={<Monitoring />} />
           <Route path="/docs" element={<Documentation />} />

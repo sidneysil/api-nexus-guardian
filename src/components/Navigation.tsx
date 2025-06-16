@@ -1,13 +1,14 @@
 
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Home, BarChart3, Settings, Shield, Activity, FileText } from "lucide-react";
+import { Home, BarChart3, Settings, Shield, Activity, FileText, Zap } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 
 const navItems = [
   { path: "/", label: "Projeto", icon: Home },
   { path: "/dashboard", label: "Dashboard", icon: BarChart3 },
   { path: "/api-manager", label: "API Manager", icon: Settings },
+  { path: "/api-integration", label: "Integração", icon: Zap },
   { path: "/auth", label: "Autenticação", icon: Shield },
   { path: "/monitoring", label: "Monitoramento", icon: Activity },
   { path: "/docs", label: "Documentação", icon: FileText },
