@@ -17,7 +17,7 @@ const ApiIntegration = () => {
         
         <div className="text-center">
           <h1 className="text-4xl font-bold text-gray-800 mb-2">Integração de APIs</h1>
-          <p className="text-gray-600">Demonstração prática das integrações com backend</p>
+          <p className="text-gray-600">Demonstração prática das integrações com backend Java Spring Boot</p>
         </div>
 
         {/* Stats da API */}
@@ -85,7 +85,7 @@ const ApiIntegration = () => {
         {/* Informações sobre as integrações */}
         <div className="grid lg:grid-cols-2 gap-6">
           <Card className="p-6 bg-white/80 backdrop-blur-sm border-0 shadow-lg">
-            <h3 className="text-xl font-semibold text-gray-800 mb-4">APIs Integradas</h3>
+            <h3 className="text-xl font-semibold text-gray-800 mb-4">APIs Spring Boot Integradas</h3>
             <div className="space-y-3">
               <div className="flex items-center justify-between p-3 rounded-lg bg-gray-50">
                 <div>
@@ -97,13 +97,20 @@ const ApiIntegration = () => {
               <div className="flex items-center justify-between p-3 rounded-lg bg-gray-50">
                 <div>
                   <p className="font-medium text-gray-800">Products API v2</p>
-                  <p className="text-sm text-gray-600">/api/v2/products/{id}</p>
+                  <p className="text-sm text-gray-600">/api/v2/products/{productId}</p>
                 </div>
                 <Badge className="bg-green-100 text-green-800">Ativa</Badge>
               </div>
               <div className="flex items-center justify-between p-3 rounded-lg bg-gray-50">
                 <div>
-                  <p className="font-medium text-gray-800">Currency API</p>
+                  <p className="font-medium text-gray-800">Auth JWT API</p>
+                  <p className="text-sm text-gray-600">/api/auth/login</p>
+                </div>
+                <Badge className="bg-green-100 text-green-800">Ativa</Badge>
+              </div>
+              <div className="flex items-center justify-between p-3 rounded-lg bg-gray-50">
+                <div>
+                  <p className="font-medium text-gray-800">Currency API Externa</p>
                   <p className="text-sm text-gray-600">/api/currency/rates</p>
                 </div>
                 <Badge className="bg-yellow-100 text-yellow-800">Externa</Badge>
@@ -112,7 +119,7 @@ const ApiIntegration = () => {
           </Card>
 
           <Card className="p-6 bg-white/80 backdrop-blur-sm border-0 shadow-lg">
-            <h3 className="text-xl font-semibold text-gray-800 mb-4">Tecnologias Backend</h3>
+            <h3 className="text-xl font-semibold text-gray-800 mb-4">Stack Tecnológico Backend</h3>
             <div className="space-y-3">
               <div className="flex items-center gap-3">
                 <div className="w-3 h-3 bg-green-500 rounded-full"></div>
@@ -133,6 +140,10 @@ const ApiIntegration = () => {
               <div className="flex items-center gap-3">
                 <div className="w-3 h-3 bg-indigo-500 rounded-full"></div>
                 <span className="text-gray-700">Swagger/OpenAPI 3.0</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="w-3 h-3 bg-red-500 rounded-full"></div>
+                <span className="text-gray-700">Docker + GitHub Actions</span>
               </div>
             </div>
           </Card>
